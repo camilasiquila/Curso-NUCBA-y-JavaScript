@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de DOM con JavaScript</title>
+</head>
+<body>
+    <h1>Manejo de DOM con JavaScript</h1>
+    <br>
+
+    <form id="forma" action="POST">
+        Nombre: <input type="text" id="nombre">
+        <br><br>
+        Apellido: <input type="text" id="apellido">  
+    </form>
+
+    <script>
+        // document.getElementById('nombre').addEventListener('focus', cambiar);
+        // document.getElementById('nombre').addEventListener('blur', regresar);
+
+        // document.getElementById('apellido').addEventListener('focus', cambiar);
+        // document.getElementById('apellido').addEventListener('blur', regresar);
+
+        // function cambiar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background ='yellow';
+        // }
+
+        // function regresar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background ='white';
+        // }
+
+
+        //arrow function, en este caso no os conviene porque no se pueden reutilizar
+        // document.getElementById('nombre').addEventListener('focus', (evento)=>{
+        //     let componente = evento.target;
+        //     componente.style.background ='pink';
+        // });
+        // document.getElementById('nombre').addEventListener('blur', (evento)=>{
+        //     let componente = evento.target;
+        //     componente.style.background ='white';
+        // });
+        // document.getElementById('apellido').addEventListener('focus', (evento)=>{
+        //     let componente = evento.target;
+        //     componente.style.background ='pink';
+        // });
+        // document.getElementById('apellido').addEventListener('blur', (evento)=>{
+        //     let componente = evento.target;
+        //     componente.style.background ='white';
+        // });
+
+        const forma = document.getElementById('forma');
+
+        forma.addEventListener('focus', (evento)=>{
+        evento.target.style.background ='pink';
+        },true); //delegacion de evento o useCapture
+        forma.addEventListener('blur', (evento)=>{
+        evento.target.style.background ='white';
+        },true);//delegacion de evento o useCapture
+
+    </script>
+</body>
+</html>

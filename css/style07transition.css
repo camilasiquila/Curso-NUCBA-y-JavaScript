@@ -1,0 +1,24 @@
+body{
+    background: rgb(217,161,255);
+    background: linear-gradient(255deg, rgba(217,161,255,1) 0%, rgba(29,90,253,1) 50%, rgba(54,56,102,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 100px;
+    height: 100px;
+    transition-property: background, width, height, border-radius;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+
+}
+.box:hover{
+    background: peru;
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+}

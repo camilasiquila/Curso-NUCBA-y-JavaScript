@@ -1,0 +1,66 @@
+ *{
+   
+    box-sizing: border-box; /*eesto le diche, no sumes el padding. El width que se definio mas el borde de 2px que tiene no le sumes el padding */
+}
+
+/*
+.rojo{
+    color: red;
+}
+
+h1{
+    color: purple;
+}
+
+.verde  {
+    color: green;
+}
+
+.azul{
+color: blue;
+}
+
+#miId{
+    color: black;
+} */
+
+.box1{
+    background: url('./img03/starwars.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+    height: 200px;
+    width: 200px;
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+    border: 2px solid black;
+    padding: 50px; /*el problema: cuando agregamos paading distintos a las cajas, estas cambian su tamaño. Esto ocurre porque el padding se suma al width que teniamos. Osea en vez de 200 es 250px* ---> BOX-SIZING: BORDER-BOX;*/
+    margin: 10px;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+    margin: 10px;
+
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 30px;
+    margin: 10px;
+
+}
+.box2 h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

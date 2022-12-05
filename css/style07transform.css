@@ -1,0 +1,25 @@
+body{
+    background: rgb(217,161,255);
+    background: linear-gradient(255deg, rgba(217,161,255,1) 0%, rgba(29,90,253,1) 50%, rgba(54,56,102,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    /* transform: rotate(25deg); */
+    transition: all 1s ease-in-out;
+
+}
+
+.box:hover{
+    /* transform: rotate(25deg);*/
+    /*transform: rotate(25deg);*/
+    /*transform: skew(25deg);*/
+    /*transform: translateX(100px);*/
+    transform: translate3d(100px, 100px,100px);
+}

@@ -1,0 +1,56 @@
+body{
+    background: rgb(217,161,255);
+    background: linear-gradient(255deg, rgba(217,161,255,1) 0%, rgba(29,90,253,1) 50%, rgba(54,56,102,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes animate1 {
+    from{
+        top:0;
+    }
+    to{
+        top:200px;
+    }
+}
+@keyframes animate2{
+    0%{
+        left: 0;
+        top: 0;
+        background: violet;
+    }
+    25%{
+        left: 200px;
+        top: 0;
+        background: rgb(255, 42, 255); 
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        background: rgb(202, 123, 255);
+    }
+    75%{
+        left: 0;
+        top: 200px;
+        background: rgb(127, 62, 231);
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background: rgb(255, 255, 255);
+    }
+
+}

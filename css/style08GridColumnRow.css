@@ -1,0 +1,24 @@
+body{
+    background: rgb(217,161,255);
+    background: linear-gradient(255deg, rgba(217,161,255,1) 0%, rgba(29,90,253,1) 50%, rgba(54,56,102,1) 100%);
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+}
+.item:first-child{
+   /* grid-column-start: 1;
+    grid-column-end: 3;*/
+    grid-column: 1 / span 4;
+}
+.item:nth-child(4){
+    grid-row: 2 / span 25; /*no se expande mas porque no hay mas contenido, es igual si pongo 6 u otro numero mayor*/
+}
+.item{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px red solid;
+}

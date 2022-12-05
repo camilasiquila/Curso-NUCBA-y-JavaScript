@@ -1,0 +1,18 @@
+body{
+    background: rgb(217,161,255);
+    background: linear-gradient(255deg, rgba(217,161,255,1) 0%, rgba(29,90,253,1) 50%, rgba(54,56,102,1) 100%);
+}
+.grid{
+    display: grid;
+    /*grid-template-columns: 300px 300px 300px;*/
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+}
+.item{
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

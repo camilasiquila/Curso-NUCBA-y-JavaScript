@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/clase10main.css">
+    <link rel="stylesheet" href="./css/clase10Style.css">
+    <title>PaginaWebClase10</title>
+</head>
+<body>
+    <div class="wrapper">   
+        <div class="top">
+            <header class="principal">
+                <h1>Conferencia</h1>
+                <p>Venir con muchas ganas de aprender!</p>
+                <p>Pet Friendly</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <p class="price">$500</p>
+                <p>VIP+ 1 bebida gratis 🍺</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <p class="price">$200</p>
+                <p>En las ultimas 3 filas</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button  aria-expanded="false" aria-controls="menu-list">
+                <span class="open"></span>
+                <span class="close">X</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">VIP</a></li>
+            </ul>
+        </nav>
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🍔</span>
+                <h3>Comida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor eveniet dolores. Repellat ducimus delectus dolor incidunt aspernatur, odio tempore nisi deserunt ex molestias voluptate dolores nostrum asperiores doloribus in.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍺</span>
+                <h3>Birra</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit odit explicabo minus omnis? Voluptatem fugiat doloribus molestias, beatae ad facere voluptates vitae ipsa quod officiis sint, soluta odio quasi libero.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">💻 </span>
+                <h3>Coding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, facere! Molestiae, tempore dolores similique odit, reprehenderit, doloribus facere est illo ducimus error harum. Quis hic, facere distinctio vel sunt nulla.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎵 </span>
+                <h3>Music all night</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque optio nesciunt unde a magni dolor! Necessitatibus dicta error pariatur. Provident est aliquam at, soluta expedita dignissimos maxime error consequuntur!</p>
+            </div>
+        </section>
+        <section class="about">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xIl9kf_0PU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="about_details">
+                
+            <h2>VAMOS A CODEAR</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero sit numquam ullam quod recusandae, facilis animi dolorem laboriosam inventore natus reiciendis facere dolorum voluptas quae asperiores totam repudiandae reprehenderit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem labore nesciunt tempora, eius quae officiis repudiandae sint, mollitia tempore ipsam eveniet debitis fugit qui illo nihil distinctio earum molestias.</p>
+            <button>Info</button>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Instant Grams</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+            <img src="https://source.unsplash.com/random/210x210" alt="">
+        </section>
+    </div>
+
+    <!-- Los script al final, antes del body--> 
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({target}) {
+            const expandir = target.getAttribute('aria-expanded') === "true" || false ;
+            navButton.setAttribute('aria-expanded', !expandir);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
+    <!--SUBIR A GITHUB Y A VERCEL.COM -->
+</body>
+</html>

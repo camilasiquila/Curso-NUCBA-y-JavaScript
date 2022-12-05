@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Krub', sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(255deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);     
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+img{
+    display: block;
+    margin-left:auto ;
+    margin-right:auto ;
+    width: 500px;
+    height: 250px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.2);
+}
+a:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+.slider-nav ul{
+    list-style: none;
+    display: flex;
+
+}
+.slider-nav li {
+    flex: 2;
+    display: flex;
+}
+.slider-nav .flechita{
+    flex: 1;
+}
+.slider-nav .flechita a{
+    font-size: 40px;
+}
+.slider-nav a{
+    padding: 20px 5px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.slider-nav span{
+    display: block;
+    flex: 1;
+    text-align: center;
+}

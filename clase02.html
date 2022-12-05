@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clase02</title>
+</head>
+<body>
+    <style type="text/css">
+        section {
+        width: 100%;
+        }
+
+        a {
+        text-decoration: none;
+        color: peru;
+        }
+
+        a:hover {
+            color: purple;
+            font-size: 30px;
+        }
+        article{
+            padding: 20px;
+            display: inline-block;
+        
+        }
+        li {
+            padding: 20px;
+        }
+
+    </style>
+    <header>
+        <h1>NucbersCinema</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Precios</a>
+        </nav>
+
+        <section>
+            <h2>Busca tu pelicula</h2>
+            <article>
+                <h3>Por año</h3>
+                <label for=""><input type="radio" name="peliyear" id=""> 2018 </label>
+                <label for=""><input type="radio" name="peliyear" id=""> 2019</label>
+                <label for=""><input type="radio" name="peliyear" id=""> 2020</label>
+                <label for=""><input type="radio" name="peliyear" id=""> 2021</label>
+            </article>
+
+            <article>
+                <h3>Por nombre</h3>
+                <input type="text" placeholder="Busqueda...">
+            </article>
+
+            <article>
+                <h3>Por genero</h3>
+                <select name="" id="mi genero">
+
+                    <option value="1">eliga una opcion</option>
+                    <option value="2">Accion</option>
+                    <option value="3">Terror</option>
+                    <option value="4">Comedia</option>
+                    <option value="5">Ciencia ficcion</option>
+
+                </select>
+            </article>
+        </section>
+        <section>
+            <h2>Agregadas recientemente</h2>
+            <article>
+                <h3>Venom 2</h3>
+                <a href="">
+                    <img src="./img02/venom.jpg" alt="">
+                </a>
+                <ul>
+                    <li>Año: 2018</li>
+                    <li>Genero: Accion</li>
+                    <li>IMBO: 5.0 estrellas</li>
+                </ul>
+            </article>
+            <article>
+                <h3>DeadPool 2</h3>
+                <a href="">
+                    <img src="./img02/deadpool-2.jpg" alt="">
+                </a>
+                <ul>
+                    <li>Año: 2018</li>
+                    <li>Genero: Accion</li>
+                    <li>IMBO: 5.0 estrellas</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Los vengadores</h3>
+                <a href="">
+                    <img src="./img02/vengadores.jpg" alt="">
+                </a>
+                <ul>
+                    <li>Año: 2018</li>
+                    <li>Genero: Accion</li>
+                    <li>IMBO: 5.0 estrellas</li>
+                </ul>
+            </article>
+        </section>
+    </header>
+</body>
+</html>
