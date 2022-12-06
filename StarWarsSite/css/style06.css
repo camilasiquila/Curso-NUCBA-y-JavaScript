@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, 
+    rgba(0,0,0,1) 0%, 
+    rgba(64,133,92,1) 50%, 
+    rgba(118,247,118,1) 100%); 
+}
+a {
+    color: white;
+    font-weight: 100;/*el ancho que quiero que ocupe la tipografia*/
+    letter-spacing: 2px; /*espacio entre letras, en px siempre*/
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+a:hover{
+background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: auto;
+}
+.navegacion ul{
+    display: flex;
+    list-style: none;
+
+}
+.navegacion li{
+    flex: 3; 
+}
+
+.navegacion .social{
+    flex: 1; /* 1: ocupa todo el contenido disponible. FLEX se divide en 3: -gow, -basis,-shrink*/
+}
+.toggle{
+    display: none;
+}
+input{
+    padding: 10px;
+    border: 0;
+}
+section,
+footer{
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    font-weight: 100;
+
+}
+.items{
+    margin-top: 20px;
+    background:rgba(0, 0, 0, 0.2) ;
+
+    display: flex;
+}
+.item{
+    flex:1 0 25%; /*----VIP----*/
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+/*Media Queries*/
+@media all and (max-width: 1000px){
+    .navegacion ul{
+        flex-wrap: wrap;
+    }
+    .navegacion li{
+        flex: 1 1 50%;
+    }
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 50%;
+        
+    }
+}
+@media all and (max-width: 500px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper > *{
+        order: 999;
+    }
+    .navegacion li{
+        flex-basis: 100%;
+    }
+    .toggle{
+        display: block;
+    }
+
+    .navegacion ul{
+        display: none;
+    }
+    .navegacion ul.open{ /*AGREGA UNA CLASE, JAVASCRIPT*/
+        display: flex;
+    }
+    .navegacion{
+        order: 1;
+    }
+    .top{
+        order: 2;
+    }
+    .details{
+        order: 3;
+    }
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 100%;
+        
+    }
+    .signup{
+        display: flex;
+        flex-direction: column;
+    }
+    .signup input{
+        margin: 5px;
+    }
+}

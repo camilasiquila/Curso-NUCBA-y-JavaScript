@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css"> /* ---- antes del style, para que en cualquier navegador se respeten los ESTILOS----- */
+    <link rel="stylesheet" href="./css/style06.css">
+    <script src="https://kit.fontawesome.com/439f8f63ed.js" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top">
+            <h1><a href="#">May The 4th Width You</a></h1>
+        </header>
+        <nav class="navegacion">
+            <!-- toggle puede estar o no, y hace diferencia -->
+            <a href="#" class="toggle"><i class="fas fa-bars"></i> Menu</a>
+            <ul>
+                <li><a href="#">VADER</a></li>
+                <li><a href="#">CHEWIE</a></li>
+                <li><a href="#">YODA</a></li>
+                <li><a href="#">RAY</a></li>
+                <li class="social"><a href="https://www.instagram.com/camilagisellesiquila/"><i class="fab fa-instagram"></i></a></li>
+                <li class="social"><a href="https://www.facebook.com/profile.php?id=100001038048630"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="social"><a href="https://github.com/camilasiquila/"><i class="fab fa-github"></i></a></li>
+               
+            </ul>
+        </nav>
+        <div class="items">
+            <div class="item">
+                <img src="./img-06/gordo.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./img-06/marron.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./img-06/rosa.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./img-06/verde.png" alt="">
+            </div>
+        </div>
+        <section class="details">
+            <p>TEXTO</p>
+            <p>MAY THE FORCE BE WITH YOU!</p>
+            <p>MY YOUNG PADAWAN!</p>
+        </section>
+        <section class="signup">
+            <form action="">
+                <input type="text" placeholder="Tu nombre..">
+                <input type="text" placeholder="Tu Email...">
+                <input type="submit" value="suscribirme!">
+            </form>
+        </section>
+        <footer>
+            <p>
+                &copy;2022 Camila Siquila!
+            </p>
+        </footer>
+    </div>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const navUl = document.querySelector('nav.navegacion ul');
+        toggle.addEventListener('click', () => {
+            navUl.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>
