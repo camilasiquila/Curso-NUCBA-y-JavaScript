@@ -9,7 +9,7 @@ https://www.udemy.com/course/universidad-javascript-angular-react-vue-typescript
 
 <h1>Links de proyectos:</h1>
 <h2>JavaScript: </h2> <br/>
-https://apppresupuesto-js.netlify.app/
+https://apppresupuestojs.netlify.app/
 <img src ="https://user-images.githubusercontent.com/101137474/205815542-e90d3ffd-5a6e-48b8-a303-7b58a3a62973.png" >
 
 https://applistadopersonas.netlify.app/ <br/>
